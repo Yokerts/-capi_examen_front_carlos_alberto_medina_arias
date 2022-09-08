@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="img/icon_angularjs.ico">
+	<title>AngularJS - C3</title>
+
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body ng-controller="myCtrl">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">AngularJS</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+
+	<!-- Masthead -->
+	<header class="masthead" >
+		<div class="container h-100">
+			<div class="row h-100 align-items-center justify-content-center text-center">
+				<!-- About Section -->
+				<section class="page-section bg-warning" id="about">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-11 text-center">
+								<table class="table table-bordered table-dark">
+									<thead>
+									<tr>
+										<th scope="col">Id</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Fecha Nacimiento</th>
+										<th scope="col">Edad</th>
+										<th scope="col">Domicilio</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr ng-repeat="(key, item) in dataTable" ng-show="dataTable.length != 0">
+										<th scope="row">{{item.user_id}}</th>
+										<td scope="col">{{item.nombre}}</td>
+										<td scope="col">{{item.fecha_nacimento}}</td>
+										<td scope="col">{{item.edad}}</td>
+										<th scope="row">{{item.domicilio_completo}}</th>
+									</tr>
+									<tr ng-show="dataTable.length == 0">
+										<td scope="col">Sin registrar</td>
+										<td scope="col">Sin registrar</td>
+										<td scope="col">Sin registrar</td>
+										<td scope="col">Sin registrar</td>
+										<td scope="col">Sin registrar</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+			</br>
+		</div>
+	</div>
+</header>
+
+
+<!-- Footer -->
+<footer class="bg-light py-5">
+	<div class="container">
+		<div class="small text-center text-muted">Copyright &copy; 2022 - Desarrollo Web con AngularJS</div>
+	</div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-tpls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-animate/1.8.3/angular-animate.min.js"></script>
+
+<script src="js/app.js"></script>
+
+<script>
+	$(window).scroll(function() {
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+	});
+</script>
+
+</body>
+</html>

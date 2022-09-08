@@ -1,0 +1,20 @@
+<div class="modal-header">
+	<h3 class="modal-title">Ejemplo Modal</h3>
+</div>
+<div class="modal-body">
+	Ingresa tu ciudad:
+	<br/>
+	<form ng-submit="ok()">
+		<div class="input-group animated fadeIn">
+			<input type="text" class="form-control finderBar" ng-model="searchTerm" placeholder="Ciudad" autofocus>
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button" ng-click="ok()">Ok</button>
+			</span>
+		</div>
+	</form>
+
+</div>
+<div class="modal-footer">
+	<button class="btn btn-light" type="button" ng-click="cancel()">Cancelar</button>
+	<button class="btn btn-primary" type="button" ng-click="save()">Guardar</button>
+</div>

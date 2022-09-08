@@ -1,0 +1,75 @@
+.navbar-light {
+  	transition:500ms ease;
+  	background:transparent;
+}
+.navbar-light.scrolled {
+  	background:#000 !important;
+}
+
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../img/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+section#about {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    /*background-color: orange;*/
+}
+
+span.navbar-toggler-icon {
+	color: white;
+	font-size: 20px;
+    padding-top: 4px;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link, .navbar-light .navbar-brand,
+.navbar-light .navbar-toggler {
+	color: white;
+}
+.navbar-light .navbar-toggler {
+	border-color: white;
+}
+/*.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}*/
+
+hr {
+    border: 2px solid rgba(241, 142, 19, 0.9);
+}
+
+table {
+	margin-bottom: 0px !important;
+}
+
+.modal-backdrop {
+   opacity: 0.5 !important;
+}
+.no-animation-modal {
+  top: 25% !important;
+  opacity: 1 !important;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
